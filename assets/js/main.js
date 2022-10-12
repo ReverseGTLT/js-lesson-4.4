@@ -93,8 +93,8 @@ console.log(sumOfPairDivisors);
 
 //-Надрукувати повну таблицю множення від 1 до 10
 let multiTable = '';
-for (let firstNum = 1; firstNum < 10; firstNum += 1){
-  for (let secondNum = 1; secondNum < 10; secondNum += 1) {
+for (let firstNum = 1; firstNum <= 10; firstNum += 1){
+  for (let secondNum = 1; secondNum <= 10; secondNum += 1) {
     multiTable = `${multiTable}${firstNum}*${secondNum}=${firstNum * secondNum}\n`
   }
   multiTable += `\n`;
