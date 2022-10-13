@@ -69,15 +69,18 @@ console.log((resultNaturalNumber.slice(1,-1)));
 
 //-Визначити кількість його парних дільників
 let resultNaturalNumberDouble = '';
+let cycleCounter = 0;
 let secondNaturalNumber = +prompt('Enter natural number')
 for (let divider = 1; divider <= secondNaturalNumber; divider +=1) {
   if (divider % 2 === 0) {
     if (secondNaturalNumber % divider === 0) {
-      resultNaturalNumberDouble = `${resultNaturalNumberDouble} ${divider},`
+      resultNaturalNumberDouble = `${resultNaturalNumberDouble} ${divider}`
+      cycleCounter++;
     }
   }
 }
 console.log((resultNaturalNumberDouble.slice(1,-1)));
+console.log(cycleCounter); //Показывает количество его делителей в единицах
 
 //-Знайти суму його парних дільників
 let sumOfPairDivisors = 0;
@@ -100,3 +103,4 @@ for (let firstNum = 1; firstNum <= 10; firstNum += 1){
   multiTable += `\n`;
 }
 console.log(multiTable);
+
