@@ -44,7 +44,9 @@ console.log(average);
 //-Вивести суму лише парних чисел в діапазоні від 30 до 80
 let doubleNum = 0;
 for (let num = 30; num <= 80; num += 1) {
-  doubleNum = doubleNum + (num % 2);
+  if(num % 2 === 0) {
+    doubleNum = doubleNum + num;
+  }
 }
 console.log(doubleNum);
 
